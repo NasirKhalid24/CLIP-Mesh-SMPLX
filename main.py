@@ -1,6 +1,7 @@
 import os
 import sys
 import yaml
+import json
 import torch
 import argparse
 
@@ -66,7 +67,8 @@ if __name__ == "__main__":
     parsed_args = {k: v for k, v in parsed_args.items() if v is not None}
 
     cfg.update(parsed_args)
-    print(cfg)
+    print(json.dumps(cfg, sort_keys=True, indent=4))
+    
     device = torch.device('cuda:' + str(cfg['gpu']))
     torch.cuda.set_device(device)
 
