@@ -1,0 +1,12 @@
+# ENV ETC.
+
+ENV
+wandb
+__pycache__
+.vscode
+.DS_Store
+
+# PROJECT STUFF
+
+models/*
+output

@@ -1,0 +1,68 @@
+loop: single
+
+model_folder: ./models
+uv_path: ./assets/base.obj
+uv_mask_path: ./assets/uv_mask.png
+base_pose: ./assets/poses/base_pose.npy
+model_type: smplx
+output_path: ./output/
+gender: male # from [male, female, neutral]
+CLIP: ViT-B/32 # other models dont work so well o_O
+
+render: diffuse # from [diffuse, pbr, normal, tangent]
+gpu: 0
+
+seed: 42
+render_res: 256
+texture_res: 64
+rand_bkg: true
+rand_pose: false
+debug_log: true
+
+epochs: 1500
+log_int: 20
+batch_size: 60
+shape_lr: 0.001
+texture_lr: 0.01
+displacement_lr: 0.0001
+TV_weight: 0.000001
+
+blur: true
+kernel_size:
+- 1
+- 1
+blur_sigma:
+- 1
+- 1
+
+betas: 10
+expressions: 10
+
+optim: # from [body, expression, texture, normal, specular, pose, displacement]
+- body
+- expression
+- pose
+
+options: # from [face, full, back]
+- full
+
+full_text: a 3D rendering of a ballerina doing the penche
+
+cameras:
+  full:
+    azim:
+    - 0.0
+    - 180.0
+    dist:
+    - 1.5
+    - 2.0
+    elev:
+    - 0.0
+    - 50.0
+    fov:
+    - 60.0
+    - 90.0
+    offset:
+    - 0.0
+    - 0.15
+    - 0.0
