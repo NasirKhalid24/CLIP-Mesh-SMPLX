@@ -4,11 +4,11 @@ The following is a research project initially inspired by [CLIPMatrix](https://a
 
 ## License
 
+This project is for research purposes only
+
 ### SMPL-X
 
-This codebase uses SMPL-X Models and the smplx pip library. By using this code you agree to the [SMPL-X Model License](https://smpl-x.is.tue.mpg.de/modellicense.html) and [smplx License](https://github.com/vchoutas/smplify-x#license)
-
-To run the code you will need to download 'SMPL-X v1.1' (830 MB) models from [here](https://smpl-x.is.tue.mpg.de/download.php)
+This codebase uses SMPL-X Models and the smplx pip library. **By using this code you agree to the [SMPL-X Model License](https://smpl-x.is.tue.mpg.de/modellicense.html) and [smplx License](https://github.com/vchoutas/smplify-x#license)**
 
 ### Renderer
 
@@ -37,8 +37,7 @@ source ENV/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
-Then download the 'SMPL-X v1.1' (830 MB) models from [here](https://smpl-x.is.tue.mpg.de/download.php) and place the extracted folder in the root of this project. So that you get the following directory
+<!-- Then download the 'SMPL-X v1.1' (830 MB) models from [here](https://smpl-x.is.tue.mpg.de/download.php) and place the extracted folder in the root of this project. So that you get the following directory
 ```
 CLIPMesh-SMPLX
 │
@@ -48,7 +47,7 @@ CLIPMesh-SMPLX
 │       │   SMPLX_NEUTRAL.pkl
 │       │   ....
 │       │   ....
-```
+``` -->
 
 To replicate the demos you can use the configs provided.
 
