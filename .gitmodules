@@ -1,0 +1,3 @@
+[submodule "nvdiffmodeling"]
+	path = nvdiffmodeling
+	url = https://github.com/NVlabs/nvdiffmodeling.git
