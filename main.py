@@ -52,7 +52,7 @@ parser.add_argument('--uv_mask_path', type=str, help="Path to UV mask")
 parser.add_argument('--rand_bkg', type=bool, help="Augment background during trianing")
 parser.add_argument('--rand_pose', type=bool, help="Augment pose during trianing")
 parser.add_argument('--debug_log', type=bool, help="Log video and training renders")
-
+parser.add_argument('--plot', type=bool, default=False, help="Plot or Save logging images")
 
 if __name__ == "__main__":
     parsed_args = parser.parse_args()

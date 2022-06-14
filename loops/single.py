@@ -21,6 +21,10 @@ from nvdiffmodeling.src import texture
 
 def single_loop(config):
 
+    if config["plot"]:
+        from IPython.display import clear_output
+        import matplotlib.pyplot as plt
+
     glctx = dr.RasterizeGLContext()
 
     config["path"] = os.path.join(config["output_path"], config["ID"])
@@ -120,7 +124,6 @@ def single_loop(config):
 
         if i == 0:
             no_texture = texture.create_trainable(np.random.uniform(size=[config["texture_res"], config["texture_res"]] + [3], low=0.85, high=1.0), [config["texture_res"], config["texture_res"]], auto_mipmaps=True)
-            no_speculs = texture.create_trainable(np.random.uniform(size=[config["texture_res"], config["texture_res"]] + [3], low=0.85, high=1.0), [config["texture_res"], config["texture_res"]], auto_mipmaps=True)
 
         if config["blur"] is True:
             # low pass filter for textures
@@ -363,15 +366,30 @@ def single_loop(config):
 
             if 'full' in config["options"] and 'face' in config["options"]:
                 log = torchvision.utils.make_grid(log_image[:2].permute(0, 3, 1, 2))
-                torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
+                if config["plot"]:
+                    clear_output()
+                    plt.imshow( log.permute(1, 2, 0).detach().cpu().numpy() )
+                    plt.show()
+                else:
+                    torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
                 video.ready_image( log.permute(1, 2, 0) )
             elif 'face' in config["options"]:
                 log = torchvision.utils.make_grid(log_image[1].unsqueeze(0).permute(0, 3, 1, 2))
-                torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
+                if config["plot"]:
+                    clear_output()
+                    plt.imshow( log.permute(1, 2, 0).detach().cpu().numpy() )
+                    plt.show()
+                else:
+                    torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
                 video.ready_image( log.permute(1, 2, 0) )
             elif 'full' in config["options"]:
                 log = torchvision.utils.make_grid(log_image[0].unsqueeze(0).permute(0, 3, 1, 2))
-                torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
+                if config["plot"]:
+                    clear_output()
+                    plt.imshow( log.permute(1, 2, 0).detach().cpu().numpy() )
+                    plt.show()
+                else:
+                    torchvision.utils.save_image(log_image.permute(0, 3, 1, 2), os.path.join(config["path"], 'img_%d.png' % i))
                 video.ready_image( log.permute(1, 2, 0) )
 
         log_image = resize(
