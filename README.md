@@ -18,13 +18,13 @@ This code base relies on [nvdiffmodeling](https://github.com/NVlabs/nvdiffmodeli
 
 Get started by testing out the features through the collabs
 
-|<img src="./assets/README/single.gif" width="310"/>|<img src="./assets/README/expressions.gif" width="310"/>|
-:--------------------------------------------------:|:--------------------------------------------------:|
-| [Create a character from just a text prompt](https://colab.research.google.com/drive/1jtVfsDTkWfOxzrSdjlooJnyhfQKLnslN?usp=sharing)  | [Change an expression with text prompt]() |
+|<img src="./assets/README/single.gif" width="310"/>|<img src="./assets/README/expressions.gif" width="310"/>|<img src="./assets/README/pose.gif" width="310"/>|<img src="./assets/README/clipmatrix.gif" width="310"/>|
+:--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|
+| [Create a character from just a text prompt](https://colab.research.google.com/drive/1jtVfsDTkWfOxzrSdjlooJnyhfQKLnslN?usp=sharing)  | [Change an expression with text prompt]() | [Pose with a description (⚠️ WIP)]()             | [Create fantastic creatures like CLIPMatrix]() |
 
-|<img src="./assets/README/pose.gif" width="310"/>|<img src="./assets/README/clipmatrix.gif" width="310"/>|
-:--------------------------------------------------:|:--------------------------------------------------:|
-| [Pose with a description (⚠️ WIP)]()             | [Create fantastic creatures like CLIPMatrix]() |
+
+
+
 
 ## Setup
 
