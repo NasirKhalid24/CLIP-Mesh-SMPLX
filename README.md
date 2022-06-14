@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 Then download the 'SMPL-X v1.1' (830 MB) models from [here](https://smpl-x.is.tue.mpg.de/download.php) and place the extracted folder in the root of this project. So that you get the following directory
 ```
-CLIPMesh-Avatars
+CLIPMesh-SMPLX
 │
 └───models
 │   └───smplx
