@@ -31,23 +31,28 @@ Get started by testing out the features through the collabs
 ```
 git clone --recurse-submodules git@github.com:NasirKhalid24/CLIPMesh-SMPLX.git
 cd CLIPMesh-SMPLX
+
+# or manually unzip so the .npz files are in the folder as shown below
+unzip /models/smplx/smplx_npz.zip -d /models/smplx   
+
 pip install virtualenv
 virtualenv ENV
 source ENV/bin/activate
+
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-<!-- Then download the 'SMPL-X v1.1' (830 MB) models from [here](https://smpl-x.is.tue.mpg.de/download.php) and place the extracted folder in the root of this project. So that you get the following directory
+
+
 ```
 CLIPMesh-SMPLX
 │
 └───models
 │   └───smplx
 │       │   SMPLX_NEUTRAL.npz
-│       │   SMPLX_NEUTRAL.pkl
 │       │   ....
 │       │   ....
-``` -->
+``` 
 
 To replicate the demos you can use the configs provided.
 
