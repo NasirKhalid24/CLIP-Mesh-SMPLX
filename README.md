@@ -1,6 +1,10 @@
 # CLIPMesh-SMPLX
 
-The following is a research project initially inspired by [CLIPMatrix](https://arxiv.org/abs/2109.12922). Following the release of [CLIP-Actor](https://arxiv.org/abs/2206.04382) and [AvatarCLIP](https://hongfz16.github.io/projects/AvatarCLIP.html) I've decided to just release my code since my work was quite similar. The main difference is that this uses meshes which are much faster and less memory-intensive, additionally I explore multiple independent optimizable parameters
+The following was a research project initially inspired by [CLIPMatrix](https://arxiv.org/abs/2109.12922). However, after the release of [CLIP-Actor](https://arxiv.org/abs/2206.04382) and [AvatarCLIP](https://hongfz16.github.io/projects/AvatarCLIP.html) I've decided to just release my code since those works have extensively documented this domain.
+
+The main difference is that this uses meshes which are much faster and less memory-intensive, additionally I explore multiple independent optimizable parameters
+
+IMO there are still huge rooms for improvement and hopefully this repo allows everyone to perform quick experimentation without needing large compute - Enjoy! 🎉
 
 ## License
 
