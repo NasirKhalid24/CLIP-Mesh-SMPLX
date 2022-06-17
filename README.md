@@ -4,7 +4,7 @@ The following was a research project initially inspired by [CLIPMatrix](https://
 
 The main difference is that this uses meshes which are much faster and less memory-intensive, additionally I explore multiple independent optimizable parameters
 
-IMO there are still huge rooms for improvement and hopefully this repo allows everyone to perform quick experimentation without needing large compute - Enjoy! 🎉
+IMO there is still huge for improvement on this topic and hopefully this repo allows everyone to perform quick experimentation without needing large compute - Enjoy! 🎉
 
 ## License
 
