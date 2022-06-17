@@ -20,7 +20,7 @@ Get started by testing out the features through the collabs
 
 |<img src="./assets/README/single.gif" width="310"/>|<img src="./assets/README/expressions.gif" width="310"/>|<img src="./assets/README/pose.gif" width="310"/>|<img src="./assets/README/clipmatrix.gif" width="310"/>|
 :--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|
-| [Create a character from just a text prompt](https://colab.research.google.com/drive/1jtVfsDTkWfOxzrSdjlooJnyhfQKLnslN?usp=sharing)  | [Change an expression with text prompt](https://colab.research.google.com/drive/1Xd8gLPHatKv5lk3txS3f97fBbqORFsI2?usp=sharing)   | [Pose with a description (⚠️ WIP)](https://colab.research.google.com/drive/1hDn04vTE0QpkvM47NDLgFYkzDu2ZQulU?usp=sharing)            | Create fantastic creatures like CLIPMatrix (⚠️ WIP)   |
+| [Create a character from just a text prompt](https://colab.research.google.com/drive/1jtVfsDTkWfOxzrSdjlooJnyhfQKLnslN?usp=sharing)  | [Change an expression with text prompt](https://colab.research.google.com/drive/1Xd8gLPHatKv5lk3txS3f97fBbqORFsI2?usp=sharing)   | [Pose with a description (⚠️ WIP)](https://colab.research.google.com/drive/1hDn04vTE0QpkvM47NDLgFYkzDu2ZQulU?usp=sharing)            | [Create fantastic creatures like CLIPMatrix](https://colab.research.google.com/drive/1rIi0Ho9Jp339_LlkHQR1QIcWkVQS5vlz?usp=sharing)   |
 
 
 
