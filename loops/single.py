@@ -143,6 +143,12 @@ def single_loop(config):
                 ).permute(0, 2, 3, 1).contiguous()
             )
 
+            ready_displ = kornia.filters.gaussian_blur2d(
+              ds_map_opt.unsqueeze(0).permute(0, 3, 1, 2),
+              kernel_size=config["kernel_size"],
+              sigma=config["blur_sigma"],
+            ).permute(0, 2, 3, 1).contiguous().squeeze(0)
+
             ready_mesh = mesh.Mesh(
                 output.vertices[0],
                 body_model.faces_tensor,
@@ -198,14 +204,14 @@ def single_loop(config):
         ready_mesh = mesh.compute_tangents(ready_mesh)
 
         if "displacement" in config["optim"]:
-            ready_mesh = mesh.displace(ready_mesh, ds_map_opt)
+            ready_mesh = mesh.displace(ready_mesh, ready_displ)
 
         notex_mesh = mesh.Mesh(unit_size(notex_mesh), base=notex_mesh)
         notex_mesh = mesh.auto_normals(notex_mesh)
         notex_mesh = mesh.compute_tangents(notex_mesh)
 
         if "displacement" in config["optim"]:
-            notex_mesh = mesh.displace(notex_mesh, ds_map_opt)
+            notex_mesh = mesh.displace(notex_mesh, ready_displ)
 
         mvp = np.zeros((config["batch_size"], 4,4),  dtype=np.float32)
         campos   = np.zeros((config["batch_size"], 3), dtype=np.float32)
