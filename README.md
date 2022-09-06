@@ -1,4 +1,4 @@
-# CLIPMesh-SMPLX
+# CLIP-Mesh-SMPLX
 
 The following was a research project initially inspired by [CLIPMatrix](https://arxiv.org/abs/2109.12922). However, after the release of [CLIP-Actor](https://arxiv.org/abs/2206.04382) and [AvatarCLIP](https://hongfz16.github.io/projects/AvatarCLIP.html) I've decided to just release my code since those works have extensively documented this domain.
 
